@@ -26,7 +26,7 @@ st.title("🎤 Orbit Voice Chat Assistant (Sesame CSM)")
 
 @st.cache_resource
 def load_model():
-    local_model_path = os.path.join(os.path.dirname(__file__), "app")
+    local_model_path = os.path.join(os.path.dirname(__file__))
     processor = AutoProcessor.from_pretrained(local_model_path)
     model = CSMModel.from_pretrained(local_model_path)
     return processor, model
