@@ -1,0 +1,6 @@
+streamlit
+torch
+soundfile
+openai
+python-dotenv
+transformers
